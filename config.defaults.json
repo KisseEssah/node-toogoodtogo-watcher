@@ -1,7 +1,7 @@
 {
   "api": {
     "credentials": {
-      "email": "Email of your TooGoodToGo account."
+      "email": "nicolas.bourdoux@gmail.com"
     },
     "session": {},
     "headers": {
@@ -11,7 +11,7 @@
   },
   "notifications": {
     "console": {
-      "enabled": false,
+      "enabled": true,
       "clear": true
     },
     "desktop": {
