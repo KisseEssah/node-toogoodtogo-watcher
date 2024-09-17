@@ -4,8 +4,7 @@
       "email": "nicolas.bourdoux@gmail.com"
     },
     "session": {},
-    "headers": {
-    },
+    "headers": {},
     "pollingIntervalInMs": 30000,
     "authenticationIntervalInMS": 3600000
   },

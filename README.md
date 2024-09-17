@@ -38,9 +38,11 @@ Options:
 ```
 
 ## Configuring Apprise notifications
+
 [Apprise](https://github.com/caronc/apprise) is software for sending notifications. It supports many services.
 
 ### Running
+
 The easiest way to run the watcher together with Apprise is to use the Docker Compose setup, specified below.
 
 ### Configuration
@@ -49,7 +51,6 @@ The easiest way to run the watcher together with Apprise is to use the Docker Co
 2. Follow any prerequisite steps as specified in the documentation.
 3. Create an 'url' in the format specified in the documentation.
 4. Add the url to the "apprise.services" section and specify the 'format'.
-
 
 ## Configuring the interactive Telegram bot
 
@@ -61,7 +62,6 @@ The easiest way to run the watcher together with Apprise is to use the Docker Co
 6. Press `BEGIN`.
 7. Your bot should greet you, and show a notification about your favorites. Note: the bot will show the favorites which
    you configured. Multiple people can connect to the bot to get updates about these favorites.
-
 
 ## Displaying the notifications in the Windows notification center
 
@@ -131,11 +131,11 @@ docker run \
          - TZ=Europe/Amsterdam
        volumes:
          - ./toogoodtogo-watcher:/home/node/.config/toogoodtogo-watcher-nodejs
-     
+
      # This will make Apprise reachable on apprise:8080 for the other Docker Compose containers
      apprise:
        image: caronc/apprise:latest
      # Enable these to make Apprise reachable from outside Docker
-     # ports: 
+     # ports:
      #   - "8080:8080"
    ```
